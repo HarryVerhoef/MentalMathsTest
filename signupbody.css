@@ -1,0 +1,153 @@
+html, body {
+	margin: 0; padding: 0;
+	width: 100%;
+	height: 100%;
+}
+*::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    opacity: 0.75;
+}
+*:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  0.75;
+}
+*::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  0.75;
+}
+*:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   opacity: 0.75;
+}
+.bodyContent {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 979px;
+}
+.bodyWrapper {
+	position: relative;
+	top: 0; left: 0;
+	width: 76%;
+	margin-left: 12%; margin-right: 12%;
+	padding-top: 170px;
+	padding-bottom: 140px;
+}
+.signUp {
+	position: relative;
+	display: block;
+	width: 600px;
+	height: 500px;
+	margin-left: 30%; margin-right: 30%;
+	background-color: #29d;
+	font-family: "Roboto";
+	color: #eee;
+	box-shadow: 0px 0px 10px 2px #000;
+	z-index: 100000000000;
+}
+#SignUpHeader {
+	margin-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	font-weight: normal;
+	font-size: 24px;
+}
+#SignUpForm {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+#SignUpForm input[type="email"], #SignUpForm input[type="text"], #SignUpForm input[type="password"] {
+	width: 65%;
+	height: 28px;
+	margin-left: 17.5%; margin-right: 17.5%;
+	background-color: #29d;
+	border: solid 1px #8d8;
+	color: #fff;
+	outline: none;
+	padding-left: 5px;
+}
+#SignUpForm input[type="number"], #SignUpForm select {
+	background-color: #29d;
+	border: solid 1px #8d8;
+	color: #fff;
+	outline: none;
+	padding-left: 5px;
+	width: 70px;
+}
+#SignUpForm input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#SignUpForm input[type="checkbox"] {
+	margin-top: 15px !important;
+	margin-bottom: 15px !important;
+}
+#SignUpForm label {
+	font-size: 13px;
+}
+#SignUpForm input[type="submit"] {
+	background-color: #29d;
+	border: solid 1px #8d8;
+	outline: none;
+	color: #8d8;
+	width: 25%;
+	height: 35px;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+#SignUpForm input[type="submit"]:hover {
+	background-color: #8d8;
+	color: #29d;
+}
+#SignUpForm a {
+	color: #8d8 !important;
+}
+#SignUpReturnPrompt {
+	position: absolute;
+	display: block;
+	top: 0; left: 0;
+	width: 90%;
+	margin-left: 5%; margin-right: 5%;
+	color: #f93;
+	font-size: 18px !important;
+	opacity: 0;
+	transition: opacity 0.4s;
+	font-weight: normal;
+	text-align: center;
+}
+#SignUpReturnPrompt.unsuccessful {
+	opacity: 1;
+}
+#BodyBackground {
+	position: fixed;
+	margin: 0; padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+	height: auto;
+	z-index: 1;
+}
+@media screen and (max-width: 670px) {
+	.signUp {
+		width: 400px;
+	}
+	#SignUpEmail, #SignUpUsername, #SignUpPassword, #SignUpRePassword {
+		width: 85% !important;
+		margin-left: 7.5% !important; margin-right: 7.5% !important;
+	}
+}
+@media screen and (max-width: 450px) {
+	.bodyWrapper {
+		margin-top: 145px;
+	}
+	.signUp {
+		width: 250px;
+	}
+	#SignUpHeader {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#SignUpEmail {
+		margin-top: 0px !important;
+	}
+}

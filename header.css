@@ -1,0 +1,759 @@
+@font-face {
+	font-family: Lunch;
+	src: url("plugins/LUNCH___.TTF");
+}
+.header {
+	position: fixed;
+	top: 0; left: 0;
+	margin: 0; padding: 0;
+	width: 100%;
+	height: 60px;
+	font-family: "Monsterrat", sans-serif;
+	box-shadow: 0px 2px 13px #000;
+	background-color: #fff;
+	transition: top 0.4s;
+	transition-delay: 0.4s;
+	z-index: 1500;
+}
+.bodyContent {
+	transition: padding-top 0.4s;
+	transition-delay: 0.4s;
+	z-index: 1000;
+}
+.bodyWrapper {
+	z-index: 1001;
+}
+.bodyContent.menu-active {
+	padding-top: 300px !important;
+}
+.header a h2 {
+	display: inline-block;
+	line-height: 60px;
+	margin: 0;
+	font-weight: normal;
+	color: #29d;
+	transition: all 0.2s;
+}
+.header > div {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+}
+.logoParent {
+	width: 300px;
+	margin-left: 12%;
+}
+.leaderboardHeaderChild, .statisticsHeaderChild {
+	float: right;
+	font-size: 11px;
+}
+.leaderboardHeaderChild {
+	margin-right: 0.5%;
+}
+.statisticsHeaderChild {
+	margin-left: 0.5%;
+	margin-right: 12%;
+}
+.verticalLineBreak {
+	position: relative;
+	float: right;
+	top: 20%;
+	width: 1px;
+	height: 60% !important;
+	background-color: #29d;
+}
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.pace-inactive {
+	display: none;
+}
+.pace .pace-progress {
+	background: #8d8;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: 2px;
+}
+.loggedInNav {
+	position: absolute !important;
+	width: 200px;
+	height: 60px;
+	left: 0; right: 0;
+	margin-left: auto; margin-right: auto;
+}
+.loggedInNav ol {
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.loggedInNav ol li {
+	width: 50%;
+	height: 60px;
+	float: left;
+	text-align: center;
+}
+.verticalLineBreak.loggedInHeader {
+	position: absolute !important;
+	right: 50% !important;
+}
+#Logo {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	min-width: 200px;
+}
+.menuIcon {
+	display: inline-block;
+	position: absolute !important;
+	width: 60px;
+	height: 60px;
+	right: 5%;
+	cursor: pointer;
+	transition: background-color 0.4s;
+}
+.menuCircle {
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border: solid 3px #29d;
+	border-radius: 50%;
+	box-sizing: border-box;
+	top: 7.5px;
+	left: 7.5px;
+	transition: all 0.4s;
+}
+.rectangleParent {
+	position: absolute;
+	width: 27px;
+	height: 17px;
+	margin-left: 6px;
+	margin-right: 6px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+.menuRectangle1,.menuRectangle2,.menuRectangle3 {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #29d;
+	left: 0;
+}
+.menuRectangle1 {
+	top: 0;
+}
+.menuRectangle2 {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.menuRectangle3 {
+	bottom: 0;
+}
+.menuIcon:hover {
+	background-color: #29d;
+}
+.menuIcon:hover .menuCircle {
+	border-color: #ffffff;
+}
+.menuIcon:hover .menuRectangle1,.menuIcon:hover .menuRectangle2,.menuIcon:hover .menuRectangle3 {
+	background-color: #ffffff;
+}
+.menuIcon.menu-active .menuCircle {
+	transform: rotate(-270deg);
+}
+.hiddenMenu {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 300px;
+	top: -300px;
+	background-color: rgba(21,21,21,0.9);
+	transition: top 0.4s;
+	transition-delay: 0.4s;
+	z-index: 1499;
+	font-family: "Roboto";
+}
+.hiddenMenu.menu-active {
+	top: 0;
+}
+.header.menu-active {
+	top: 300px;
+}
+.socialLinks {
+	position: absolute;
+	width: 60%;
+	height: 300px;
+	top: 0;
+	left: 0;
+}
+.socialLinks ol, .siteLinks ol {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 300px;
+	list-style-type: none;
+}
+.socialLinks li {
+	width: 100%;
+	height: 33.3333333333%;
+	margin: 0;
+	padding: 0;
+}
+.socialLinks li p {
+	display: inline-block;
+	line-height: 100px;
+	height: 100px;
+	margin: 0;
+	top: 100px;
+	font-size: 24px;
+}
+.socialIcon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 25px;
+	float: left;
+}
+#TwitterLinkHeader p {
+	color: #598dca;
+}
+#FacebookLinkHeader p {
+	color: #3a589b;
+}
+#EmailLinkHeader p {
+	color: #eee;
+}
+.verticalLineBreakHidden {
+	position: absolute;
+	width: 1px;
+	height: 90%;
+	top: 5%;
+	right: 0;
+	background-color: #29d;
+}
+.siteLinks {
+	position: absolute;
+	width: 40%;
+	height: 300px;
+	top: 0;
+	right: 0;
+}
+.siteLinks ol li {
+	width: 100%;
+	height: 75px;
+}
+.siteLink {
+	position: absolute;
+	width: 55%;
+	height: 35px;
+	left: 22.5%;
+	right: 22.5%;
+	margin-top: 20px;
+	padding: 0;
+	background-color: #fff;
+	color: #29d;
+	text-align: center;
+	transition: all 0.4s;
+}
+.siteLink p {
+	line-height: 35px;
+	margin: 0;
+}
+.siteLink:hover {
+	background-color: #29d;
+	color: #fff;
+}
+.twitterEmbed {
+	position: absolute;
+    width: 400px;
+    height: 300px;
+    right: 100px;
+    top: 37.5px;
+}
+.adParent {
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	transition: top 0.4s;
+	transition-delay: 0.4s;
+	z-index: 999;
+}
+.adParent.left {
+	left: 0;
+}
+.adParent.right {
+	right: 0;
+}
+.adParent.menu-active {
+	top: 300px;
+}
+.horizontalAdvertisement {
+	display: inline-block;
+	position: relative;
+	width: 728px;
+	height: 90px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	box-shadow: 0px 0px 15px 5px #111111;
+	background-color: #000;
+}
+.horizontalAdvertisement .advertisementPrompt {
+	color: #fff;
+	line-height: 90px;
+	margin: 0;
+	padding: 0;
+}
+.horizontalAdvertisement.mobile {
+	display: none;
+	width: 320px;
+	height: 100px;
+}
+.horizontalAdvertisement .adsbygoogle {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.carouselParent {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #252525;
+}
+.carousel, .carousel ul li{
+	width: 100%;
+	height: 100%;
+}
+.carousel ul li img {
+	height: 100%;
+	width: 100%;
+}
+.loggedInNav > ol li {
+	width: 70px;
+	height: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	border: solid 1px #ddd;
+	border-radius: 3px;
+	box-sizing: border-box;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ddd;
+	color: #29d;
+	margin-left: 15px; margin-right: 15px;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+.loggedInNav > ol li:hover {
+	background-color: #29d !important;
+	border-color: #29d !important;
+	color: #fff;
+}
+.finishedOverlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21, 21, 21, 0);
+	z-index: 1000000;
+	font-family: "Roboto";
+	text-align: center;
+}
+.finishedOverlay.active {
+	display: block;
+	background-color: rgba(21, 21, 21, 0.5);
+}
+.finishedContent {
+	position: absolute;
+	display: none;
+	width: 35%;
+	height: 30%;
+	min-height: 250px;
+	left: 32.5%;
+	right: 32.5%;
+	top: 37.5%;
+	bottom: 37.5%;
+	background-color: #ffffff;
+}
+.finishedContent.active,.guestFinishedContent.active,.userAccountDialog.active {
+	display: block;
+	animation-name: finished;
+	animation-duration: 0.55s;
+	animation-fill-mode: forwards;
+}
+#FinishedBars {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+}
+#FinishedBars > li {
+	position: relative;
+	display: inline-block;
+	width: 6.25%;
+	height: 100%;
+	margin-left: 3.125%;
+	margin-right: 3.125%;
+	margin-bottom: 0; margin-top: 0;
+	float: left;
+}
+.finishedBar {
+	position: absolute;
+	width: 75%;
+	bottom: 0;
+	left: 0; right: 0;
+	margin-left: auto; margin-right: auto;
+	margin-top: 0; margin-bottom: 0;
+	background-color: rgba(34, 153, 221, 0.5);
+	border-left: solid 1px #29d;
+	border-top: solid 1px #29d;
+	border-right: solid 1px #29d;
+}
+.finishedBar.active {
+	animation-name: scaleFinished;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+.closeIcon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+#FinishedOverlay {
+	font-size: 24px;
+	font-weight: normal;
+	color: #29d;
+}
+.userAccountDialog {
+	position: absolute;
+	display: none;
+	width: 50%;
+	height: 300px;
+	left: 25%;
+	right: 25%;
+	top: 0; bottom: 0;
+	margin-top: auto; margin-bottom: auto;
+	background-color: #ffffff;
+	font-family: "Roboto";
+}
+#UserAccountDialogHeader {
+	text-align: left;
+	padding-left: 15px;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0; padding-bottom: 0; padding-right: 0;
+	line-height: 60px;
+	color: #29d;
+}
+#UserAccountLoginForm,#UserAccountSignUpForm {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 240px;
+	bottom: 0;
+	left: 0;
+}
+#UserAccountLoginForm.active,#UserAccountSignUpForm.active {
+	display: block;
+}
+.login {
+	position: relative;
+	display: none;
+	width: 570px;
+	height: 300px;
+	top: 20px;
+	background-color: #eee;
+	text-align: center;
+	font-family: "Roboto";
+	box-shadow: 0 0 10px 2px #000;
+	z-index: 102;
+}
+#LoginHead {
+	position: absolute;
+	font-weight: normal;
+	color: #29d;
+	margin-top: 15px; margin-left: 15px;
+	font-size: 24px;
+}
+#UserAccountLoginForm {
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	height: 253px;
+}
+#LoginEmail {
+	margin-top: 35px !important;
+}
+#UserAccountLoginForm input[type="text"], #UserAccountLoginForm input[type="password"] {
+	position: relative;
+	display: block;
+	width: 70%;
+	height: 35px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-left: 15%; margin-right: 15%;
+	margin-top: 15px; margin-bottom: 15px;
+	background-color: #eee;
+	outline: none;
+	border: solid 1px #292;
+	color: #29d;
+}
+.loggedInNav > ol > a {
+	text-decoration: none;
+	color: #29d;
+}
+.login span {
+	position: absolute;
+	bottom: 0; left: 0;
+	margin: 10px;
+}
+#LoginButton1,#SignUpSubmit {
+	width: 100px;
+	height: 36.6666666667px;
+	background-color: #8d8;
+	border-bottom: solid 3px #29d;
+	border-top: none; border-left: none; border-right: none;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #151515 !important;
+	margin-bottom: 10px;
+	transition: all 0.4s;
+	font-size: 14px;
+	outline: none;
+}
+#LoginButton1:hover,#SignUpSubmit:hover {
+	background-color: #29d;
+	color: #fff !important;
+	border-bottom-color: #8d8;
+}
+.login2,.signUp,.loggedIn {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	height: 315px;
+	float: left;
+	background-color: #fff;
+	color: #151515;
+}
+.signUp {
+	background-color: #29d !important;
+	color: #fff !important;
+}
+.login2 h2,.signUp h2,.loggedIn h2 {
+	font-size: 28px;
+	font-weight: normal;
+	margin: 0;
+	height: 60px;
+	line-height: 60px;
+	color: #29d;
+}
+.signUp h2 {
+	color: #fff;
+}
+.signUp1,.signUp2 {
+	position: absolute;
+	width: 50%;
+	height: 255px;
+	bottom: 0;
+}
+.signUp1 {
+	left: 0;
+}
+.signUp2 {
+	right: 0;
+}
+#SignUpForm {
+	position: absolute;
+	width: 100%;
+	height: 255px;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+.signUp1 > input {
+	width: 90%;
+	height: 35px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border: solid 1px #292;
+	color: #29d;
+	outline: none;
+}
+.signUp2 > input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.signUp2 > input[type="number"] {
+	width: 24%;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-left: 4%;
+	margin-right: 4%;
+	background-color: #fff;
+	border: solid 1px #292;
+	color: #29d;
+	outline: none;
+	text-align: center;
+}
+.signUp2 > select {
+	border: solid 1px #292;
+	background-color: #fff;
+	outline: none;
+	color: #29d;
+}
+.signUp2 > label {
+	font-size: 14px;
+	font-weight: normal;
+}
+.signUp2 > label > a {
+	color: #8d8;
+}
+@keyframes finished {
+	0% {
+		transform: scale(0);
+	}
+	65% {
+		transform: scale(1.07);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0px 0px 15px 5px #111111;
+	}
+}
+@keyframes scaleFinished {
+	0% {
+		height: 0;
+		opacity: 0;
+	}
+	100% {
+		height: 100%;
+		opacity: 1;
+	}
+}
+@media screen and (max-width: 1600px) {
+	.socialLinks li p {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1500px) {
+	.twitterEmbed {
+		display: none;
+	}
+	.socialLinks li p {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.logoParent {
+		margin-left: 5%;
+	}
+
+}
+@media screen and (max-width: 1150px) {
+	.logoParent {
+		width: 26.4783759929%;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.loggedInNav {
+		display: none !important;
+	}
+	.statisticsHeaderChild {
+		margin-right: 17%;
+	}
+}
+@media screen and (max-width: 750px) {
+	.socialLinks li p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.statisticsHeaderChild, .leaderboardHeaderChild, .header .verticalLineBreak{
+		display: none !important;
+	}
+	.socialIcon {
+		width: 25px;
+		height: 25px;
+		margin: 12.5px;
+		margin-top: 37.5px;
+	}
+	.socialLinks li p {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.login,.loggedIn {
+		width: 450px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.socialLinks {
+		display: none;
+	}
+	.verticalLineBreakHidden {
+		display: none;
+	}
+	.siteLinks {
+		width: 100%;
+	}
+	.siteLink {
+		width: 70%;
+		left: 15%;
+		right: 15%;
+	}
+}
+@media screen and (max-width: 490px) {
+	#LoginButton,#SignUpSubmit {
+		font-size: 11px;
+	}
+	#LoginEmail, #LoginPassword {
+		width: 95% !important;
+		margin-left: 2.5% !important; margin-right: 2.5% !important;
+	}
+	#LoginButton {
+		width: 25% !important;
+		margin-left: 37.5% !important; margin-right: 37.5% !important;
+	}
+	.login,.loggedIn {
+		width: 275px;
+	}
+	#LevelBreakdownTable {
+		display: none;
+	}
+	#GuestFinishedHeader {
+		font-size: 15px;
+	}
+	#PercentageStats,#PercentageScoreLeft,#PercentageScoreRight,#GuestFinishedP1,#GuestFinishedP2 {
+		font-size: 14px;
+	}
+}

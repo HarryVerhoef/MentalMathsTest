@@ -1,0 +1,1150 @@
+html, body, .bodyContent {
+	margin: 0; padding: 0;
+	width: 100%;
+	height: 1800px;
+}
+html {
+	overflow-x: hidden; 
+}
+.bodyContent {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 190px;
+}
+.login::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #151515;
+    opacity: 0.75;
+}
+.login:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #151515;
+   opacity:  0.75;
+}
+.login::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #151515;
+   opacity:  0.75;
+}
+.login:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #151515;
+   opacity: 0.75;
+}
+#BodyBackground {
+	position: fixed;
+	margin: 0; padding: 0;
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+	z-index: 1;
+}
+.bodyWrapper {
+	position: relative;
+	margin-bottom: 0;
+	margin-top: 60px;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	background-color: #ffffff;
+}
+.unslider {
+	height: 500px !important;
+}
+.carouselParent {
+	position: relative;
+	height: 750px;
+	padding-left: 0;
+	overflow: hidden;
+}
+.carousel li > div {
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+.carousel li > div img {
+	position: absolute;
+	z-index: 17000;
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+	top: 0; left: 0;
+	transition: all 0.4s;
+}
+.carousel > ul > li:hover > div img {
+	width: 102% !important;
+	min-height: 102%;
+	top: -1%; bottom: -1%; left: -1%; right: -1%;
+	opacity: 0.6;
+}
+.centreTextParent {
+	position: absolute;
+	display: table;
+	width: 100%;
+	height: 500px;
+	top: 0; left: 0;
+	z-index: 18000;
+}
+.centreText {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 19000;
+	color: #ffffff;
+	font-family: "Roboto";
+}
+.centreText h1 {
+	font-family: Lunch !important;
+	font-size: 70px;
+	text-shadow: 1px 1px 2px #000;
+	margin-top: 10px;
+}
+.centreText h3 {
+	font-weight: normal;
+	font-size: 15px;
+	text-shadow: 1px 1px 2px #000;
+}
+.centreText p,.centreText div {
+	position: relative;
+	z-index: 20000;
+}
+.carouselButton {
+	position: absolute;
+	display: inline-block;
+	width: 150px;
+	height: 55px;
+	background-color: #8d8;
+	border-bottom: solid 3px #fff;
+	border-radius: 3px;
+	left: 0; right: 0; bottom: 0;
+	margin: auto;
+	cursor: pointer;
+	color: #151515 !important;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	transition: all 0.4s;
+}
+.carouselButton:hover {
+	background-color: #29d;
+	color: #fff !important;
+}
+.carouselButton.practice {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.carouselButton p {
+	margin: 0;
+	padding: 0;
+	line-height: 55px;
+}
+.unslider-nav {
+	position: absolute;
+	bottom: 0;
+	z-index: 15000000000000000000;
+}
+#CustomTestUL {
+	list-style: disc !important;
+	display: inline-block;
+}
+#CustomTestUL li {
+	list-style: disc !important;
+}
+.guestParent {
+	position: absolute;
+	width: 100%;
+	height: 75px;
+	top: 596.6666666666px;
+	z-index: 103;
+	text-align: center;
+}
+.guest {
+	position: relative;
+	display: inline-block;
+	width: 210px;
+	height: 75px;
+	background-color: #eee;
+	text-align: center;
+	font-family: "Roboto";
+	box-shadow: 0px 0px 10px 2px #000;
+	transition: background-color 0.4s;
+	cursor: pointer;
+}
+.guest:hover {
+	background-color: #29d;
+}
+.guest:hover #GuestPrompt {
+	color: #eee;
+}
+#GuestPrompt {
+	line-height: 75px;
+	color: #29d;
+	font-weight: normal;
+	margin: 0; padding: 0;
+	text-align: center;
+}
+
+.guest p {
+	line-height: 50px;
+	color: #29d;
+}
+.lowerBody {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background-color: transparent;
+	z-index: 101;
+	text-align: center;
+	font-family: "Roboto";
+	color: #8d8;
+	font-weight: normal;
+	z-index: 1500000000000000000000;
+	border-top: dashed 5px rgba(255,255,255,0.5);
+    box-sizing: border-box;
+}
+#LowerBodyHead {
+	position: relative;
+	font-size: 25px;
+	font-weight: normal;
+	margin-top: 0;
+}
+#ImprovementsList {
+	position: relative;
+	display: table;
+	list-style: none;
+	width: 76%;
+	margin-top: 50px; margin-left: 12%; margin-right: 12%;
+	padding: 0;
+	height: 300px;
+}
+#ImprovementsList li {
+	text-align: center;
+	position: relative;
+	display: table-cell;
+}
+#ImprovementsList li div > img {
+	width: 140px;
+	height: 140px;
+}
+#ImprovementsList li div > h4 {
+	font-weight: normal;
+	font-size: 28px;
+}
+.lowerDescription, .responsiveDescription, .levelBreakdown {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 315px;
+	background-color: #eee;
+	z-index: 102;
+	font-family: "Roboto";
+}
+.responsiveDescription {
+	background-color: #29d !important;
+	padding-top: 26.6px;
+}
+.responsiveContent {
+	position: absolute;
+	left: 12%;
+	width: 70%;
+	color: #eeeeee;
+}
+.levelBreakdown {
+	padding-left: 12%;
+    text-align: left !important;
+    padding-right: 12%;
+    width: 76%;
+    padding-top: 26.6px;
+}
+#YourScorePreview {
+	height: 100%;
+	width: auto;
+}
+#ResponsiveHeader {
+	color: #eeeeee;
+}
+#ResponsiveHeader, #LevelHeader {
+	margin-top: 0;
+	font-size: 20px;
+}
+#LevelHeader {
+	color: #29d;
+}
+#LevelBreakdownTable {
+	width: 76%;
+	margin-left: 24%;
+	margin-top: 0; margin-bottom: 0;
+	padding: 0;
+}
+#LevelBreakdownTable tr td {
+	text-align: left;
+	width: 50%;
+}
+#ResponsivePreview {
+	position: absolute;
+	width: 11%;
+	height: auto;
+	max-height: 315px;
+	right: 1%;
+	top: 0; bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+#LeaderboardLinkBulk {
+	color: #8d8 !important;
+}
+.yourScoreDescription {
+	position: absolute;
+	top: 0;
+	left: 530px;
+	margin-right: 12%;
+	font-family: "Roboto";
+}
+.yourScoreDescription h4 {
+	font-size: 20px;
+}
+#LogInReturnPrompt {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50px;
+	font-weight: normal;
+	color: #f93;
+	opacity: 0;
+	transition: opacity 0.4s;
+	text-align: center;
+}
+#LogInReturnPrompt.unsuccessful {
+	opacity: 1;
+}
+.loggedInLink {
+	text-decoration: none !important;
+	width: 40%;
+}
+.homeLoggedIn, .playLoggedIn, .signoutLoggedIn {
+	position: relative;
+	width: 40%;
+	height: 50px;
+	left: 30%;
+	right: 30%;
+	margin-top: 15px;
+	margin-bottom: 0;
+	cursor: pointer;
+	font-size: 18px;
+	transition: all 0.2s;
+}
+.loggedInP {
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+.homeLoggedIn {
+	background-color: #29d;
+}
+.playLoggedIn {
+	background-color: #8d8;
+}
+.signoutLoggedIn {
+	background-color: #f93;
+}
+.homeLoggedIn:hover, .playLoggedIn:hover, .signoutLoggedIn:hover {
+	transform: scale(1.1);
+}
+.questionArea1,.questionArea2 {
+	display: block;
+	opacity: 0;
+	transition: opacity 0.4s;
+	color: #ffffff;
+	font-size: 35px;
+}
+.questionArea1.question-active,.questionArea2.question-active {
+	opacity: 1;
+}
+.landingText {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	bottom: 20px;
+	color: #ffffff;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.landingText h2,.notLoggedHeader {
+	font-size: 21px;
+	font-family: "Roboto";
+	font-weight: normal;
+	text-shadow: 1px 1px 1px #000000;
+	color: #fff;
+	padding-top: 65px;
+}
+.notLoggedHeader {
+	font-size: 26px !important;
+	font-weight: bold !important;
+	padding-top: 40px !important;
+}
+.practiceGuest {
+	cursor: auto !important;
+}
+.playGuestParent,.createTestParent,.questionParent,.practiceGuestParent {
+	display: table-cell;
+	vertical-align: middle;
+	z-index: 151;
+}
+.playGuest h3,.createTest h3,.sampleQuestions h3,.practiceGuest h3 {
+	position: absolute;
+	width: 100%;
+	margin-top: 20px;
+	font-size: 26px;
+	font-weight: normal;
+	z-index: 151;
+}
+.playGuest p,.createTest p,.practiceGuest p,.sampleQuestions p {
+	z-index: 152;
+	position: relative;
+}
+.practiceGuestParent ol {
+	position: relative;
+	z-index: 153;
+	text-align: left;
+}
+.practiceGuestParent ol li a {
+	color: #8d8;
+}
+.playGuest img,.createTest img,.sampleQuestions img,.practiceGuest img {
+	position: absolute;
+	width: 120%;
+	left: -10%; right: -10%;
+	min-height: 120%;
+	height: auto;
+	top: -10%;
+	z-index: 150;
+	transition: all 0.4s;
+}
+.playGuest:hover img,.createTest:hover img,.sampleQuestions:hover img,.practiceGuest:hover img {
+	width: 100%;
+	min-height: 100%;
+	height: auto;
+	left: 0;
+	top: 0;
+}
+.playGuest:hover h3,.createTest:hover h3,.sampleQuestions:hover h3,.practiceGuest:hover h3 {
+	text-decoration: underline;
+}
+.questionParent1,.questionParent2 {
+	position: absolute;
+}
+.questionParent2 {
+	top: 0;
+	right: 0;
+}
+
+
+
+.finishedContent {
+	position: absolute;
+	display: none;
+	width: 35%;
+	height: 30%;
+	min-height: 250px;
+	left: 32.5%;
+	right: 32.5%;
+	top: 37.5%;
+	bottom: 37.5%;
+	background-color: #ffffff;
+}
+.finishedContent.active,.guestFinishedContent.active,.userAccountDialog.active {
+	display: block;
+	animation-name: finished;
+	animation-duration: 0.55s;
+	animation-fill-mode: forwards;
+}
+#FinishedBars {
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	left: 0;
+}
+#FinishedBars > li {
+	position: relative;
+	display: inline-block;
+	width: 6.25%;
+	height: 100%;
+	margin-left: 3.125%;
+	margin-right: 3.125%;
+	margin-bottom: 0; margin-top: 0;
+	float: left;
+}
+.finishedBar {
+	position: absolute;
+	width: 75%;
+	bottom: 0;
+	left: 0; right: 0;
+	margin-left: auto; margin-right: auto;
+	margin-top: 0; margin-bottom: 0;
+	background-color: rgba(34, 153, 221, 0.5);
+	border-left: solid 1px #29d;
+	border-top: solid 1px #29d;
+	border-right: solid 1px #29d;
+}
+.finishedBar.active {
+	animation-name: scaleFinished;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+.closeIcon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+}
+#FinishedOverlay {
+	font-size: 24px;
+	font-weight: normal;
+	color: #29d;
+}
+#ScoreOverlay {
+	font-size: 20px;
+	font-weight: normal;
+
+}
+.joinCustom::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fff !important;
+    opacity: 0.75;
+}
+.joinCustom:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #fff !important;
+   opacity: 0.75;
+}
+.joinCustom::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #fff !important;
+   opacity: 0.75;
+}
+.joinCustom:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff !important;
+   opacity: 0.75;
+}
+.playGuest2,.createCustom,.practiceGuest2,.unslider-nav, .carousel > ul > li {
+	width: 100%;
+}
+
+
+.guestOverlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21,21,21,0.5);
+	top: 0; left: 0;
+	z-index: 150000000000000;
+	font-family: "Roboto";
+}
+.guestOverlay.active {
+	display: block;
+}
+.guestFinishedContent {
+	position: absolute;
+	display: block;
+	width: 75%;
+	height: 75%;
+	min-height: 550px;
+	top: 12.5%; left: 12.5%;
+	background-color: #fff;
+}
+.guestFinishedHeader {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20%;
+	min-height: 100px;
+	text-align: center;
+}
+#GuestFinishedHeader {
+	font-weight: normal;
+	font-size: 34px;
+	color: #29d;
+	margin: 0; padding: 0;
+	line-height: 100px;
+}
+.closeIcon2 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+.percentageMeter {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 30%;
+	min-height: 150px;
+}
+.otherStats {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 50%;
+	min-height: 250px;
+}
+.timeStats,.signUpStats {
+	position: absolute;
+	width: 75%;
+	height: 50%;
+	min-height: 125px;
+	left: 0;
+}
+.timeStats {
+	top: 0;
+}
+.signUpStats {
+	bottom: 0;
+}
+.practiceStats {
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	top: 0; right: 0;
+}
+.percentageExplanation,.percentageBarParent {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0;
+	text-align: center;
+}
+.percentageExplanation {
+	left: 0 !important;
+}
+.percentageBarParent {
+	right: 0 !important;
+}
+#PercentageStats {
+	color: #151515;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 150px;
+	margin: 0;
+	padding: 0;
+}
+.percentageBar {
+	position: relative;
+	width: 75%;
+	height: 40%;
+	left: 12.5%;
+	top: 30%;
+}
+.percentageBarLeft,.percentageBarRight {
+	position: absolute;
+	height: 100%;
+	top: 0;
+}
+.percentageBarLeft {
+	left: 0;
+	background-color: #29d;
+	border: solid 1px #fff;
+	border-radius: 8px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.percentageBarRight {
+	right: 0;
+	background-color: #151515;
+	border: solid 1px #fff;
+	border-radius: 8px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+#PercentageScoreLeft,#PercentageScoreRight {
+	font-size: 23px;
+	line-height: 87.66px;
+	color: #fff;
+	margin: 0; padding: 0;
+}
+.lineBreak {
+	position: absolute;
+	width: 90%;
+	height: 1px;
+	left: 5%; right: 5%;
+	bottom: 0;
+	background-color: #29d;
+}
+.practiceStats > div {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 25%;
+	text-align: center;
+}
+.carouselButton.blue {
+	background-color: #29d;
+	color: #fff !important;
+	border-bottom: solid 3px #8d8;
+	top: 0;
+	margin-top: auto; margin-bottom: auto;
+}
+#GuestFinishedP1,#GuestFinishedP2 {
+	font-size: 20px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#GuestFinishedP1 {
+	padding-left: 6.25% !important;
+	padding-right: 6.25% !important;
+}
+
+
+
+.userAccountDialog {
+	position: absolute;
+	display: none;
+	width: 50%;
+	height: 300px;
+	left: 25%;
+	right: 25%;
+	top: 0; bottom: 0;
+	margin-top: auto; margin-bottom: auto;
+	background-color: #ffffff;
+	font-family: "Roboto";
+}
+#UserAccountDialogHeader {
+	text-align: left;
+	padding-left: 15px;
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0; padding-bottom: 0; padding-right: 0;
+	line-height: 60px;
+	color: #29d;
+}
+#UserAccountLoginForm,#UserAccountSignUpForm {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 240px;
+	bottom: 0;
+	left: 0;
+}
+#UserAccountLoginForm.active,#UserAccountSignUpForm.active {
+	display: block;
+}
+
+#LowerBodyOL {
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	top: -5px; left: 0;
+	margin: 0; padding: 0;
+	z-index: 10000000;
+}
+#LowerBodyOL > li {
+	position: relative;
+	display: inline-block;
+	width: 33.3333333333%;
+	height: 250px;
+	margin: 0; padding: 0;
+	float: left;
+}
+#LowerBodyOL > li > div {
+	position: absolute;
+	width: 70%;
+	height: 80%;
+	left: 15%; right: 15%; top: 10%; bottom: 10%;
+	background-color: #29d;
+	border: solid 1px #29d;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.5) !important;
+}
+.classTest {
+	z-index: 15000000000;
+	height: 110% !important;
+	top: -5% !important; bottom: -5% !important;
+	width: 90% !important;
+	left: 5% !important;
+	right: 5% !important;
+}
+.classTest h2,.classTest p {
+	color: #fff;
+}
+.classTest .carouselButton {
+	bottom: 30px !important;
+}
+.classTest .carouselButton p {
+	color: #151515 !important;
+}
+.classTest .carouselButton:hover {
+	background-color: #151515 !important;
+	border-bottom-color: #8d8 !important;
+}
+.classTest .carouselButton:hover p {
+	color: #8d8 !important;
+}
+#IndividualTestCode,#ClassTestCode{
+	width: 65%;
+	height: 35px;
+	box-sizing: border-box;
+	background-color: #151515;
+	border: solid 2px #fff;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 18px;
+	padding-left: 5px; padding-right: 5px;
+	text-align: center;
+}
+#OnlineSubmit,#OfflineSubmit {
+	width: 100px;
+	height: 35px;
+	box-sizing: border-box;
+	background-color: #8d8;
+	border-bottom: solid 3px #fff;
+	border-radius: 3px;
+	border-top: none;border-left: none;border-right: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+#OnlineSubmit:hover,#OfflineSubmit:hover,.createTestButton:hover {
+	background-color: #151515;
+	border-bottom-color: #8d8;
+	color: #8d8;
+}
+.createTestButton:hover p {
+	color: #8d8;
+}
+#ClassCode::-webkit-input-placeholder,#IndividualTestCode::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fff;
+    opacity: 0.75;
+}
+#ClassCode:-moz-placeholder,#IndividualTestCode:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #fff;
+   opacity: 0.75;
+}
+#ClassCode::-moz-placeholder,#IndividualTestCode::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #fff;
+   opacity: 0.75;
+}
+#ClassCode:-ms-input-placeholder,#IndividualTestCode:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #fff;
+   opacity: 0.75;
+}
+#LowerBodyOL h3,#LowerBodyOL h2 {
+	font-size: 23px;
+	font-weight: normal;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+	line-height: 60px;
+	height: 60px;
+	margin: 0; padding: 0;
+}
+#LowerBodyOL h2 {
+	font-weight: 600;
+}
+#LowerBodyOL > li > div:hover h3,#LowerBodyOL > li > div:hover h2 {
+	text-decoration: underline;
+}
+#SignUpPrompt {
+	position: absolute;
+	bottom: 15px; left: 0; right: 0;
+	margin: auto;
+	font-size: 14px;
+}
+#CreateTestP {
+	position: absolute;
+	width: 100%;
+	height: 127px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #fff;
+}
+.createTestButton {
+	position: absolute;
+	width: 100px;
+	height: 35px;
+	box-sizing: border-box;
+	background-color: #8d8;
+	border-bottom: solid 3px #fff;
+	border-radius: 3px;
+	border-top: none;border-left: none;border-right: none;
+	cursor: pointer;
+	transition: all 0.4s;
+	text-align: center;
+	left: 0; right: 0; bottom: 15px;
+	margin: auto;
+}
+.createTestButton p {
+	height: 35px;
+	line-height: 35px;
+	text-decoration: none;
+	color: #151515;
+	margin: 0; padding: 0;
+	font-size: 13.3333px;
+	font-family: Arial;
+}
+span.signUpButton {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#ClassCode {
+	width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: solid 2px #fff;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    font-size: 23px;
+    color: #151515;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.submitClassCode,.submitCreateClassTest {
+	position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 50px;
+	background-color: #fff;
+	text-align: center;
+	font-size: 23px;
+	color: #151515;
+	font-weight: bold;
+	border: solid 2px #fff;
+	border-radius: 5px;
+	box-sizing: border-box;
+	box-shadow: 3px 4px 15px 1px rgba(21,21,21,0.7);
+	transition: all 0.4s;
+	text-align: left;
+}
+.submitClassCode:hover #SubmitClassCode {
+	background-color: #29d;
+	color: #fff;
+}
+.submitClassCode:hover .arrowArea {
+	background-color: #fff;
+}
+.submitClassCode:hover .arrowBox {
+	border-color: #29d;
+}
+#SubmitClassCode,#SubmitCreateClassTest {
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	background-color: #fff;
+	outline: none;
+	left: -2px; top: -2px;
+	margin: 0;
+	border: none;
+	cursor: pointer;
+	border: solid 2px #fff;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-sizing: border-box;
+	transition: all 0.4s;
+}
+.arrowArea {
+	position: absolute !important;
+	width: 50px;
+	height: 50px;
+	right: -2px; top: -2px;
+	background-color: #29d;
+	border: solid 0px #29d;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+.arrowBox {
+	position: absolute !important;
+	width: 21.21320344px;
+	height: 21.21320344px;
+	top: 15px; left: 9px;
+	transform: rotate(-45deg);
+	border-bottom: solid 2px #fff;
+	border-right: solid 2px #fff;
+	border-bottom-right-radius: 5px;
+	box-sizing: border-box;
+	transition: all 0.4s;
+}
+.carouselBackground {
+	min-height: 750px;
+}
+@media screen and (max-width: 1550px) {
+	#LowerBodyOL h3,#LowerBodyOL h2 {
+		font-size: 18px;
+		height: 40px;
+		line-height: 40px;
+	}
+	#IndividualTestCode, #ClassTestCode {
+		margin-top: 20px;
+		font-size: 12px;
+	}
+	#CreateTestP {
+		height: 147px;
+		font-size: 12px;
+	}
+	.classTest > p {
+		margin-top: 40px !important;
+	}
+}
+@media screen and (max-width: 1370px) {
+	.yourScoreDescription, .responsiveContent, .levelBreakdown {
+		font-size: 13px;
+	}
+}
+@media screen and (max-width: 1110px) {
+	#YourScorePreview, #ResponsivePreview {
+		display: none;
+	}
+	.yourScoreDescription, .responsiveContent {
+		left: 0;
+		width: 76%;
+		margin-left: 12%; margin-right: 12%;
+	}
+	#PercentageStats {
+		    position: absolute;
+    		top: -40%;
+    		width: 200%;
+	}
+	.percentageBarParent {
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 1050px) {
+	#LowerBodyOL h3 {
+		font-size: 15px;
+	}
+	.practiceStats {
+		display: none;
+	}
+	.timeStats,.signUpStats {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.closeIcon2 {
+		width: 35px;
+    	height: 35px;
+    	top: 15px;
+    	right: 15px;
+	}
+	#GuestFinishedHeader {
+		font-size: 28px;
+	}
+	#PercentageStats {
+		font-size: 22px;
+	}
+
+
+}
+@media screen and (max-width: 1150px) {
+	#YourScoreHeader, #ResponsiveHeader {
+		font-size: 15px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#LevelHeader {
+		font-size: 15px !important;
+		margin-bottom: 10px;
+	}
+	#MentalAgilityIcon, #MentalArithmeticIcon, #MentalPowerIcon {
+		width: 100px !important;
+		height: 100px !important;
+	}
+	#ImprovementsList h4 {
+		font-size: 20px !important;
+	}
+	.levelBreakdown {
+		font-size: 10px;
+	}
+	.lowerBody {
+		height: 945px;
+	}
+	#LowerBodyOL > li {
+		width: 100%;
+	}
+	#LowerBodyOL > li:nth-of-type(2) {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#LowerBodyOL {
+		padding-top: 315px;
+	}
+	.guestFinishedContent {
+		width: 85%;
+		left: 7.5%;
+	}
+}
+@media screen and (max-width: 700px) {
+	#GuestFinishedHeader {
+		font-size: 22px;
+	}
+	.closeIcon2 {
+		width: 20px;
+		height: 20px;
+	}
+	#PercentageStats,#PercentageScoreLeft,#PercentageScoreRight {
+		font-size: 17px;
+	}
+	#GuestFinishedP1,#GuestFinishedP2 {
+		font-size: 16px;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	.yourScoreDescription, .responsiveContent {
+		width: 90%;
+		margin-left: 5%; margin-right: 5%;
+		font-size: 10px;
+	}
+	.levelBreakdown {
+		width: 90%;
+		padding-left: 5%; padding-right: 5%;
+	}
+	.login,.loggedIn {
+		width: 450px;
+	}
+}
+@media screen and (max-width: 490px) {
+	#LoginButton,#SignUpSubmit {
+		font-size: 11px;
+	}
+	#MentalAgilityIcon, #MentalArithmeticIcon, #MentalPowerIcon {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	#ImprovementsList h4 {
+		font-size: 15px !important;
+	}
+	#LowerBodyHead {
+		font-size: 20px !important;
+	}
+	#LoginEmail, #LoginPassword {
+		width: 95% !important;
+		margin-left: 2.5% !important; margin-right: 2.5% !important;
+	}
+	#LoginButton {
+		width: 25% !important;
+		margin-left: 37.5% !important; margin-right: 37.5% !important;
+	}
+	.login,.loggedIn {
+		width: 275px;
+	}
+	#LevelBreakdownTable {
+		display: none;
+	}
+	#GuestFinishedHeader {
+		font-size: 15px;
+	}
+	#PercentageStats,#PercentageScoreLeft,#PercentageScoreRight,#GuestFinishedP1,#GuestFinishedP2 {
+		font-size: 14px;
+	}
+}

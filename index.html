@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<? include "connect.php" ?>
+	<meta name="viewport" content="width=device-width" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>MentalMathsTest | Home</title>
+	<link rel="stylesheet" type="text/css" href="header.css"/>
+	<link rel="stylesheet" type="text/css" href="mainbody.css"/>
+	<link rel="stylesheet" type="text/css" href="footer.css"/>
+	<div class="header">
+		<div class="logoParent">
+			<a href="http://www.mentalmathstest.com"><img src="images/MentalMathsTestLogo.png" id="Logo" alt="Mental Maths Test"/></a>
+		</div>
+		<div class="statisticsHeaderChild"><a href="http://www.mentalmathstest.com/statistics" id="StatisticsLink"><h2>STATISTICS</h2></a></div>
+		<div class="verticalLineBreak"></div>
+		<div class="leaderboardHeaderChild"><a href="http://www.mentalmathstest.com/leaderboard" id="LeaderboardLink"><h2>LEADERBOARD</h2></a></div>
+	</div>
+</head>
+<body>
+<img src="images/bodybackground.png" id="BodyBackground">
+	<div class="bodyContent">
+		<div class="bodyWrapper">
+			<div class="login">
+				<h3 id="LoginHead">Login</h3>
+				<form id="LoginForm">
+					<input type="text" placeholder="Email / Username" id="LoginEmail" name="loginemail" />
+					<input type="password" placeholder="Password" id="LoginPassword" name="loginpassword" />
+					<input type="submit" value="Log In" id="LoginButton" name="loginbutton"><br>
+					<span>Don't yet have an account? <a href="http://www.mentalmathstest.com/signup.html">Sign Up!</a></span>
+				</form>
+			</div>
+			<a href="http://www.mentalmathstest.com/play" id="GuestPlayLink">
+				<div class="guest">
+					<p>Or play as a guest</p>
+				</div>
+			</a>
+		</div>
+		<div class="lowerBody">
+			<h3 id="LowerBodyHead">Improve your mental...</h3>
+			<ol id="ImprovementsList">
+				<li>
+					<div class="mentalAgility">
+						<img src="images/MentalAgilityIcon.png" id="MentalAgilityIcon">
+						<h4>Agility</h4>
+					</div>
+				</li>
+				<li>
+					<div class="mentalArithmetic">
+						<img src="images/MentalArithmeticIcon.png" id="MentalArithmeticIcon">
+						<h4>Arithmetic</h4>
+					</div>
+				</li>
+				<li>
+					<div class="mentalPower">
+						<img src="images/MentalPowerIcon.png" id="MentalPowerIcon">
+						<h4>Power</h4>
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="lowerDescription">
+			<img src="images/YourScorePreview.png" id="YourScorePreview">
+			<div class="yourScoreDescription">
+				<h4 id="YourScoreHeader">How it works</h4>
+				<p>The mental maths test consists of 15 levels, each of these levels contain 10 questions and you are allocated a certain amount of time to each level, not each question. This amount of time varies and will not be displayed while you are being tested - just to make it that little bit more challenging.</p>
+				<p>The score you get if you run out of time is obtained by: (Level reached).(Question Number)(Percentage of time taken on the question), the score you get if you finish the test is obtained by 16.(Percentage of time taken in total), therefore the maximum score is 17.00 and although we openly invite you to try getting that, if you did we'd probably have to test whether you're human or not. If somebody got a score of 10.36, this means that they reached Level 10, question 3 and spent 60% of the time available for level 10 on question 3.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<h5>Site created and managed by <a href="https://www.twitter.com/HarryVerhoef" target="_blank">@HarryVerhoef</a></h5>
+			<a href="#" class="footerLink">Terms and Conditions</a><br>
+			<a href="#" class="footerLink">Privacy Policy</a><br>
+			<a href="#" class="footerLink">Sitemap</a><br>
+			<a href="#" class="footerLink">Contact</a>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//ready for code
+		});
+	</script>
+</body>
+</html>

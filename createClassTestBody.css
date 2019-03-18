@@ -1,0 +1,144 @@
+html, body {
+	margin: 0; padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.bodyContent {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #151515;
+}
+.bodyWrapper {
+	position: relative;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding-top: 60px;
+	text-align: center;
+	font-family: "Roboto";
+	padding-left: 400px;
+    box-sizing: border-box;
+    transition: padding-left 0.4s;
+}
+.bodyWrapper.active {
+	padding-left: 0;
+}
+#CreateClassTestHeader {
+	font-weight: normal;
+	color: #fff;
+	font-size: 35px;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 0;
+}
+.leftTutorial {
+	position: absolute;
+	display: block;
+	width: 400px;
+	height: 100%;
+	left: -400px; top: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: left;
+	background-color: #9cc;
+	color: #fff;
+	padding-top: 60px;
+	box-sizing: border-box;
+	transition: left 0.4s;
+	transition-delay: 0s;
+}
+.leftTutorial.active {
+	left: 0 !important;
+}
+.leftTutorial label {
+	color: rgba(255,255,255,0.8);
+}
+.leftTutorial h3 {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	color: rgba(21,21,21,0.65);
+}
+.leftTutorial input,.classTestSubmit {
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+.leftTutorial input[type="text"] {
+	border: dashed 2px #fff;
+	background-color: #a9cccc;
+	outline: none;
+	color: #29d;
+	text-align: center;
+	font-size: 19px;
+}
+.leftTutorial input[type="text"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #29d !important;
+    opacity: 0.6;
+}
+.leftTutorial input[type="text"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #29d !important;
+   opacity: 0.6;
+}
+.leftTutorial input[type="text"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #29d !important;
+   opacity: 0.6;
+}
+.leftTutorial input[type="text"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #29d !important;
+   opacity: 0.6;
+}
+.classTestContent.active {
+	opacity: 1;
+	transition-delay: 0.4s;
+}
+.classTestSubmit {
+	background-color: #29d;
+	border: dashed 2px #fff;
+	cursor: pointer;
+	text-align: center !important;
+	transition: all 0.4s;
+}
+.classTestSubmit h3 {
+	margin: 0; padding: 0;
+	line-height: 36px;
+	font-weight: normal;
+	color: #fff;
+}
+.classTestSubmit:hover {
+	background-color: #fff;
+	border-color: #29d;
+}
+.classTestSubmit:hover h3 {
+	color: #29d !important;
+}
+
+
+.classTestContent {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0; left: 0;
+	background-color: #9cc;
+	opacity: 0.5;
+	transition: opacity 0.4s;
+}
+.classTestRibbon {
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+.playerCounter,.testFormat {
+	position: absolute;
+	width: 50%;
+	height: 150px;
+	top: 0; left: 0;
+}
+.testFormat {
+	left: 50% !important;
+};

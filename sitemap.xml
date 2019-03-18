@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://mentalmathstest.com</loc>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/home</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/play</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/leaderboard</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/statistics</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/signup</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/contact</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.40</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/termsandconditions</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/privacypolicy</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.30</priority>
+</url>
+<url>
+  <loc>https://mentalmathstest.com/sitemap</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.20</priority>
+</url>
+</urlset>

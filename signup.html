@@ -1,0 +1,96 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+};
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<title>MentalMathsTest | Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="header.css"/>
+	<link rel="stylesheet" type="text/css" href="signupbody.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<div class="header">
+		<div class="logoParent">
+			<a href="http://www.mentalmathstest.com"><img src="images/MentalMathsTestLogo.png" id="Logo" alt="Mental Maths Test"/></a>
+		</div>
+		<div class="statisticsHeaderChild"><a href="http://www.mentalmathstest.com/statistics" id="StatisticsLink"><h2>STATISTICS</h2></a></div>
+		<div class="verticalLineBreak"></div>
+		<div class="leaderboardHeaderChild"><a href="http://www.mentalmathstest.com/leaderboard" id="LeaderboardLink"><h2>LEADERBOARD</h2></a></div>
+	</div>
+</head>
+<body>
+	<div class="bodyContent">
+		<div class="bodyWrapper">
+			<div class="signUp">
+				<h2 id="SignUpHeader">Sign Up</h2>
+				<h3 id="SignUpReturnPrompt">Invalid registration details</h3>
+				<form id="SignUpForm" action="register.php" method="post">
+					<input type="email" placeholder="Email" id="SignUpEmail" name="signupemail" required autofocus/><br>
+					<input type="text" placeholder="Username" id="SignUpUsername" name="signupusername" required/><br>
+					<input type="password" placeholder="Password" id="SignUpPassword" name="signuppassword" required/><br>
+					<input type="password" placeholder="Re-enter password" id="SignUpRePassword" name="signuprepassword" required/><br>
+					Date Of Birth: <br><input type="number" placeholder="DD" id="SignUpD" name="signupd" min="1" max="31" maxlength="2" required/>
+					<input type="number" placeholder="MM" id="SignUpM" name="signupm" min="1" max="12" maxlength="2" required/>
+					<input type="number" placeholder="YYYY" id="SignUpY" name="signupy" min="1900" max="2016" maxlength="4" required/><br>
+					Gender: <select form="SignUpForm" name="signupgender" required>
+						<option value="">------</option>
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select><br>
+					<input type="checkbox" id="SignUpTermsAndConditions" name="signuptermsandconditions" value="termsandconditions" required/>
+					<label for="SignUpTermsAndConditions">By registering to this website I agree to the 
+					<a href="#" id="TermsAndConditionsLink">Terms and Conditions</a> 
+					and the <a href="#" id="PrivacyPolicyLink">Privacy Policy</a></label><br>
+					<input type="submit" value="Sign Up" id="SignUpSubmit" name="signupsubmit" required/>
+				</form>
+			</div>
+		</div>
+		<div class="footer">
+			<h5>Site created and managed by <a href="https://www.twitter.com/HarryVerhoef" target="_blank">@HarryVerhoef</a></h5>
+			<a href="#" class="footerLink">Terms and Conditions</a><br>
+			<a href="#" class="footerLink">Privacy Policy</a><br>
+			<a href="#" class="footerLink">Sitemap</a><br>
+			<a href="#" class="footerLink">Contact</a>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function returnPrompt(returnString) {
+				$("#SignUpReturnPrompt").html(returnString);
+				$("#SignUpReturnPrompt").addClass("unsuccessful");
+				setTimeout(function() {
+					$("#SignUpReturnPrompt").removeClass("unsuccessful");
+				}, 4000);
+			};
+			$(".signUp").css("margin-left",($(".bodyWrapper").width()-$(".signUp").width())/2);
+			$(".signUp").css("margin-right",($(".bodyWrapper").width()-$(".signUp").width())/2);
+			var s = location.search.split("s=")[1];
+			if (s == "false") {
+				returnPrompt("Invalid Registration Inputs");
+			} else if (s == "username") {
+				returnPrompt("Invalid Username");
+			} else if (s == "usernametaken") {
+				returnPrompt("Username already being used");
+			} else if (s == "email") {
+				returnPrompt("Invalid Email");
+			} else if (s == "emailtaken") {
+				returnPrompt("Email already being used");
+			} else if (s == "passwordsdifferent") {
+				returnPrompt("Passwords didn't match");
+			} else if (s == "date") {
+				returnPrompt("Invalid Date");
+			} else if (s == "termsandconditions") {
+				returnPrompt("Please accept the terms and conditions");
+			};
+			$(window).resize(function() {
+				$(".signUp").css("margin-left",($(".bodyWrapper").width()-$(".signUp").width())/2);
+				$(".signUp").css("margin-right",($(".bodyWrapper").width()-$(".signUp").width())/2);
+			});
+		});
+	</script>
+</body>
+</html>
